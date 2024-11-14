@@ -1,1 +1,4 @@
-<app-card></app-card>
+
+@for (contato of getContatos(); track $index) {
+    <app-card [contato] = "contato"></app-card>
+}
